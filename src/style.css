@@ -29,10 +29,12 @@ header {
     z-index: 99;
 }
 
-.logo {
-    color: white;
-    font-size: 2em;
-    user-select: none;
+
+.logo img {
+    width: 300px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
 }
 
 .navigation a {
