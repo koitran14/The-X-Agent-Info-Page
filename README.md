@@ -1,7 +1,7 @@
 # IT GAMING TOUR 2023: THE X AGENT
 #### _Personal Web Design Learning Project_
 
-![](res/obj/5_0OvA.gif)
+![](src/res/web-ui.png)
 #
 
 ## Introduction
