@@ -6,50 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The X Agent | ITYU </title>
-    <link rel="icon" href="res/icon-page.png" type="image/x-icon">
+    
+    <!-- icon for page-title -->
+    <link rel="icon" href="res/img/icon-page.png" type="image/x-icon">
+    
+    <!-- custom css link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
+    <section class="intro">
+            <header id="main-header">
+                <div class="logo">
+                    <a href="https://www.facebook.com/cseiu.info" target="_blank">
+                    <img src="res/img/logo.png" alt="IT Gaming Tour 2023: THE X AGENT">
+                    </a>
+                </div>
 
-    <header>
-        <div class="logo">
-            <a href="https://www.facebook.com/cseiu.info" target="_blank">
-                <img src="res/logo.png" alt="IT Gaming Tour 2023: THE X AGENT">
-            </a>
-        </div>
+                <nav class="navigation">
+                    <a href="#">Giới Thiệu</a>
+                    <a href="#">Thể Lệ</a>
+                    <a href="#">Agenda</a>
+                    <a href="#">Ấn Phẩm</a>
+                    <a href="#">Ban Tổ Chức</a>
+                    <a href="#">Liên Hệ</a>
+                    <button onclick="window.open('https://bit.ly/ITGT_Register_Form', '_blank')" class="btnRegister-popup">Đăng ký ngay</button>
+                </nav>
 
-        <nav class="navigation">
-            <a href="#">Giới Thiệu</a>
-            <a href="#">Thời Gian</a>
-            <a href="#">Thể Lệ</a>
-            <a href="#">Bảng Thi Đấu</a>
-            <a href="#">Ấn Phẩm</a>
-            <a href="#">Ban Tổ Chức</a>
-            <a href="#">Liên Hệ</a>
-            <button onclick="window.open('https://bit.ly/ITGT_Register_Form', '_blank')" class="btnRegister-popup">Đăng ký ngay</button>
+                <div id="menu-icon">
+                    <ion-icon id="menu-outl" name="menu-outline"></ion-icon>
+                </div>
+            </header>
 
-        </nav>
-    </header>
+            <div class="content">
+                <div class="intro-text">
+                    <h6>#CSE YOUTH UNION</h6>
+                    <h3 id>IT GAMING TOUR 2023:</h3>
+                    <h1 id="name">THE X AGENTS</h1>
+                    <p>Giải đấu Esport do Đoàn - Hội Khoa Công nghệ Thông tin, ĐHQT-ĐHQG TP.HCM tổ chức.</p>
+                    <a href="https://bit.ly/ITGT_Register_Form" target="_blank">Đăng ký</a>
+                    <a href="https://www.youtube.com/@PR_Department_ITYU_HCMIU/videos" target="_blank"><ion-icon name="play"></ion-icon>Watch Gameplay</a>
+                </div>       
 
-    <section class="article">
-        <h1 id ="text">IT GAMING TOUR 2023:</h1>
-        <h1 id="name">THE X AGENT</h1>
+                <div class="social">
+                    <a href="https://www.youtube.com/@PR_Department_ITYU_HCMIU/videos" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <a href="https://www.facebook.com/ITGamingTournament" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/ityu.home/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>  
+
+                <div class="intro-img" alt="intro-img">
+                    <img src="res/img/intro-img.png">
+                </div>
+            </div>
     </section>
 
-    
-    <!-- <div class="introduction">
-        <h3>CUỘC THI</h3>
-        <p>In today’s rapid evolution of technology industry, there is an increasing need for continuous learning and updating of knowledge. To facilitate the adoption of new ideas, Object-Oriented Programming has emerged as a robust paradigm for organizing projects that including code more reusability, modularity, maintainability, and scalability, to embrace new algorithms more easily and systematically.
-            Consequently, our team has made the choice to utilize Java.Swing (Java.awt) as the primary library for coding and implementing Object-Oriented Programming (OOP) in our game project, “The Treasure Hunt”. This decision was made in order to evaluate the viability of the principles inherent in this model. Furthermore, our goals encompassed enhancing our proficiency in collaborative projects and obtaining a more comprehensive comprehension of the game development process.
-          <br><br>In today’s rapid evolution of technology industry, there is an increasing need for continuous learning and updating of knowledge. To facilitate the adoption of new ideas, Object-Oriented Programming has emerged as a robust paradigm for organizing projects that including code more reusability, modularity, maintainability, and scalability, to embrace new algorithms more easily and systematically.
-            Consequently, our team has made the choice to utilize Java.Swing (Java.awt) as the primary library for coding and implementing Object-Oriented Programming (OOP) in our game project, “The Treasure Hunt”. This decision was made in order to evaluate the viability of the principles inherent in this model. Furthermore, our goals encompassed enhancing our proficiency in collaborative projects and obtaining a more comprehensive comprehension of the game development process.<br><br></p>
-    </div> -->
 
+    <div class ="scroll-up">
+        <a href="#">
+            <ion-icon name="caret-up-outline"></ion-icon>
+        </a>
+    </div>
+
+    <!-- scrolling effect link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- custom js link -->
     <script src="script.js"></script>
+
+    <!-- custom icon link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
