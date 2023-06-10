@@ -8,6 +8,7 @@ window.addEventListener('scroll', function() {
       header.classList.remove('scrolled');
     }
   });
+
   
 var menuToggle = document.getElementById('menu-icon');
 var menuIcon = document.getElementById('menu-outl');
@@ -23,11 +24,18 @@ menuToggle.addEventListener('click', function() {
   }
 });
   
-const sr = ScrollReveal ({
-  distance: '65px',
-  duration: 2600,
-  delay: 450,
-  reset: true
-})
+// Select the first-page icon link
+const firstPageLink = document.querySelector('.scroll-up');
 
-sr.reveal('.content',{delay:200, origin:'top'});
+// Add a click event listener to the link
+firstPageLink.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  // Get the target section element
+  const targetSection = document.querySelector('.intro');
+
+  // Scroll to the target section with smooth behavior
+  targetSection.scrollIntoView({
+    behavior: 'smooth'
+  });
+});
