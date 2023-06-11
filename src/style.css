@@ -54,6 +54,7 @@ body{
     display: inline-block;
 }
 
+
 .navigation a::after {
     content: '';
     position: absolute;
@@ -95,7 +96,11 @@ body{
     color: white;
 }
 
-#menu-icon{
+.navigation .btnRegister-popup:active{
+    opacity: 0.7 ;
+}
+
+#menu-bar{
     display: none;
     color: white;
     font-size: 25px;
@@ -103,18 +108,18 @@ body{
     transition: transform 0.3s ease;
 } 
 
-#menu-icon:hover {
+#menu-bar:hover {
     transform: scale(1.1);
     color: white;
 } 
 
-#menu-icon:active {
+#menu-bar:active {
     opacity: 0.6;
 }
 
 
 .content {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-left: 20px;
 }
 
@@ -125,18 +130,32 @@ body{
     padding-right: 50%;
 }
 
-.content .intro-text h6{
+.content .intro-text h6 {
     letter-spacing: 3px;
-    font-size: 13px;
-    font-weight: 600;
-    color: rgb(187, 58, 58);
-    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.content .intro-text .organization {
+    font-weight: 700;
+    color: rgb(224, 93, 93);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.content .intro-text .organization:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.content .intro-text .organization:active{
+    opacity: 0.7;
 }
 
 .content .intro-text h3{
     font-size: 18px;
     font-weight: 600;
     color: whitesmoke;
+    margin-top: 40px;
     
 }
 .content .intro-text h1{
@@ -154,13 +173,12 @@ body{
     font-size: 15px;
     font-weight: 300;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
-.content .intro-text a{
+.content .intro-text .button{
     display: inline-block;
     text-decoration: none;
-    background: white;
     border: 1px solid white;
     background: rgba(153, 41, 41, 0.619);
     color: white;
@@ -185,7 +203,7 @@ body{
 
 .content .social {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 35px;
     padding-left: 5px;
     transform: translateY(-50%);
     z-index: 20;
@@ -201,7 +219,22 @@ body{
 
 .content .social a:hover{
     transform: scale(1.2);
-    color: rgb(181, 81, 81);
+}
+
+.content .social a .youtube:hover {
+    color:rgb(181, 81, 81);
+}
+
+.content .social a .facebook:hover {
+    color:rgb(23, 120, 242);
+}
+
+.content .social a .instagram:hover  {
+    background: linear-gradient(to bottom right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #2475b0, #3295c6, #66b9df, #a9e1f0, #d6ecf6);
+    background-clip: border;
+    color: white;
+    border-radius: 6px;
+    font-weight: 700;
 }
 
 .content .social a:active{
@@ -280,24 +313,17 @@ body{
         transition: .2s;
     }
 
-    #menu-icon {
-        display: block;
-    }
-
     .navigation {
-        display: none;
         position: absolute;
-        top: 100%;
+        top: 109px;
         right: -100%;
         width: 250px;
-        height: 50vh;
+        height: 70vh;
         font-size: 1em;
         background: rgba(107, 38, 38, 0.874);
-        border-radius: 6px;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        padding: 20px 20px;
+        padding-top: 40px;
         transition: 0.4s;
     }
 
@@ -306,16 +332,29 @@ body{
         transition:  0.4s;
     }
 
+    #menu-bar{
+        display: block;
+    }
 
     .navigation a{
         display: block;
         margin-bottom: 20px;
         margin-left: 0;
         font-weight: 700;
+        padding: 5px 30px 12px 25px;
+        text-align: right;
+        letter-spacing: 1px;
+        border-bottom: rgba(255, 255, 255, 0.479) ;
+        transform: none;
+    }
+
+    navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
     }
 
     .navigation .btnRegister-popup{
-        margin-left: 0;
+        margin: 0 auto;
         margin-top: -10px;
         font-size: 1.1em;
         font-weight: 700;
@@ -326,7 +365,7 @@ body{
     .navigation .btnRegister-popup:hover{
         background: white;
         color: rgb(181, 81, 81);
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .intro-img img{
@@ -342,3 +381,8 @@ body{
         padding-right: 5%;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
