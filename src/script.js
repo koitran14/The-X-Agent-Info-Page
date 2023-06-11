@@ -18,14 +18,9 @@ window.addEventListener('scroll', function() {
     if (menuIcon.getAttribute('name') === 'menu-outline') {
       menuIcon.setAttribute('name', 'close-outline');
       navlist.classList.toggle('open');
-      menuToggle.style.top = '3%';
-      menuToggle.style.right = '20%';
-
     } else {
       menuIcon.setAttribute('name', 'menu-outline');
       navlist.classList.remove('open');
-      menuToggle.style.top = ''; // Reset to the default position
-      menuToggle.style.left = ''; // Reset to the default position
     }
   });
   
@@ -55,3 +50,11 @@ window.addEventListener('scroll', () => {
   navLinks[currentSection].classList.add('active');
 });
 
+const sr = ScrollReveal ({
+  distance: '65px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+sr.reveal('.content',{delay:200, origin:'top'});
