@@ -144,7 +144,7 @@ body{
 }
 
 .content .intro-text .organization:hover {
-    color: white;
+    color: #FEB18E;
     background-color: transparent;
 }
 
@@ -166,6 +166,12 @@ body{
     font-family: 'ValorantFont', sans-serif;
     margin-top: 2%;
     margin-bottom: 20px;
+    transition: .3s;
+}
+
+.content .intro-text h1:hover{
+    transform: scale(1.1);
+    color: #FEB18E;
 }
 
 .content .intro-text p{
@@ -297,7 +303,7 @@ body{
     opacity: 70%;
 }
 
-@media (max-width: 1167px){
+@media (max-width: 1180px){
     header{
         padding: 15px 3%;
         transition: .2s;
@@ -305,9 +311,8 @@ body{
 
     body{
         z-index: 10000;
-        padding-right: 0;
-        
-
+        padding-right: 40px;
+        padding-left: 40px;
     }
     .icons {
         padding: 0 3%;
@@ -316,21 +321,23 @@ body{
 
     .navigation {
         position: absolute;
-        top: 109px;
+        top: 100%;
         right: -100%;
         width: 250px;
-        height: 70vh;
+        height: auto;
         font-size: 1em;
         background: rgba(107, 38, 38, 0.874);
         display: flex;
         flex-direction: column;
         padding-top: 40px;
-        transition: 0.4s;
+        transition: 0.5s;
     }
 
     .navigation.open{
         right: 0;
         transition:  0.4s;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #menu-bar{
@@ -343,7 +350,7 @@ body{
         margin-left: 0;
         font-weight: 700;
         padding: 5px 30px 12px 25px;
-        text-align: right;
+        text-align: center;
         letter-spacing: 1px;
         border-bottom: rgba(255, 255, 255, 0.479) ;
         transform: none;
@@ -372,16 +379,32 @@ body{
     .intro-img img{
         width: 100%;
         height: auto;
+        padding-top: 10px;
     }
-}
 
-
-@media (max-width: 730px){
     .content .intro-text{
         z-index: 20;
-        padding-right: 5%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #name{
+        font-size: 420%;
+    }
+
+    .content{
+        padding-top: 13%;
+    }
+
+    #main-header{
+        padding: 4.5% 4.5% 4.5% 4.5%;
+    }
+    .logo img{
+        width: 40%;
+        align-items: space-between;
     }
 }
+
 
 html {
     scroll-behavior: smooth;
