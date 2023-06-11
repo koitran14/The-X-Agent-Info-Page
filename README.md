@@ -1,5 +1,5 @@
 # IT GAMING TOUR 2023: THE X AGENT
-#### _Personal Web Design Learning Project_
+#### _Web Design Seft-Study Project_
 
 ![](src/res/img/web-ui.jpeg)
 #
@@ -8,17 +8,6 @@
 In today’s rapid evolution of technology industry, there is an increasing need for continuous learning and updating of knowledge. To facilitate the adoption of new ideas, Object-Oriented Programming has emerged as a robust paradigm for organizing projects that including code more reusability, modularity, maintainability, and scalability, to embrace new algorithms more easily and systematically.
 
 Consequently, our team has made the choice to utilize Java.Swing (Java.awt) as the primary library for coding and implementing Object-Oriented Programming (OOP) in our game project, _“The Treasure Hunt”_. This decision was made in order to evaluate the viability of the principles inherent in this model. Furthermore, our goals encompassed enhancing our proficiency in collaborative projects and obtaining a more comprehensive comprehension of the game development process.
-
-
-### Team members:
-
-| Order | Full name | ID |
-| ------ | ------ | ------ |
-| 1 | [Tran Ngoc Dang Khoi](https://github.com/koitran14) | ITCSIU21197 |
-| 2 | [Nguyen Tran Hoang Ha](https://github.com/HoangHaITITIU21127) | ITITIU21127 | 
-| 3 | [Ha Van Uyen Nhi](https://github.com/Jay2717) | ITCSIU21095 |
-| 4 | [Nguyen Hoang Quan](https://github.com/Quanchip) | ITITIU21291 |
-
 
 ### After this project, we aim to gain:
 - Deep learning of Object-Oriented Programming's Principles✨
@@ -32,9 +21,8 @@ _"The Treasure Hunt"_ is a platform game where players control a pirate characte
 
 ## Technique 
 To do this project, we use: 
-- Language: `Java`
-- Library: `Java.awt`
-- IDE: `IntelliJ`, `VsCode`, `Esclipe`.
+- Language: `HTML`, `CSS`, `JavaScript`.
+- IDE:  `VsCode`.
 
 
 ## Methodology
