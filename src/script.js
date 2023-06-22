@@ -10,18 +10,21 @@ window.addEventListener('scroll', function() {
   });
 
   
-  var menuToggle = document.getElementById('menu-bar');
-  var menuIcon = document.getElementById('menu-outl');
+  var menuToggle = document.getElementById('menu-open');
   let navlist = document.querySelector('.navigation');
-  
-  menuToggle.addEventListener('click', function() {
-    if (menuIcon.getAttribute('name') === 'menu-outline') {
-      menuIcon.setAttribute('name', 'close-outline');
-      navlist.classList.toggle('open');
-    } else {
-      menuIcon.setAttribute('name', 'menu-outline');
+  var closeToggle = document.getElementById('close-outl');
+
+  menuToggle.addEventListener('click', () => {
+    if (!navlist.classList.contains('open')) {
+      menuToggle.classList.add('active');
+      navlist.classList.add('open');
+    } 
+  });
+
+  closeToggle.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
       navlist.classList.remove('open');
-    }
+
   });
   
 // Select the scroll-up icon link
@@ -48,6 +51,7 @@ window.addEventListener('scroll', () => {
 
   navLinks.forEach((link) => link.classList.remove('active'));
   navLinks[currentSection].classList.add('active');
+
 });
 
 const sr = ScrollReveal ({
@@ -58,3 +62,6 @@ const sr = ScrollReveal ({
 })
 
 sr.reveal('.content',{delay:200, origin:'top'});
+sr.reveal('.slider-content',{delay:200, origin:'top'});
+sr.reveal('.timeline',{delay:200, origin:'top'});
+
