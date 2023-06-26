@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('/res/font/ValorantFont.ttf') format('truetype'),
+         url('https://fonts.googleapis.com/css?family=Poppins');
+}

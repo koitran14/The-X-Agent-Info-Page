@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('/res/img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1180px){
+    body{
+        z-index: 10000;
+    }
+}

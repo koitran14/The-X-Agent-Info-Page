@@ -65,3 +65,6 @@ sr.reveal('.content',{delay:200, origin:'top'});
 sr.reveal('.slider-content',{delay:200, origin:'top'});
 sr.reveal('.timeline',{delay:200, origin:'top'});
 
+
+
+

@@ -9,10 +9,26 @@
     
     <!-- icon for page-title -->
     <link rel="icon" href="res/img/icon-page.png" type="image/x-icon">
-    
-    <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
-   
+
+    <!-- core file -->
+    <link rel="stylesheet" href="/core/font.css">
+    <link rel="stylesheet" href="/core/body.css">
+    <link rel="stylesheet" href="/core/scrolled.css">
+
+
+    <!-- header file -->
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/header/navigation.css">
+
+    <!-- section1 -->
+    <link rel="stylesheet" href="/section1/content.css">
+
+    <!-- section2 -->
+    <link rel="stylesheet" href="/section2/section2.css">
+
+    <!-- section3 -->
+    <link rel="stylesheet" href="/section3/slider-content.css">
+  
 </head>
 
 <body>
@@ -66,6 +82,7 @@
                         Với tầm quan trọng và sự phổ biến của eSports ngày càng gia tăng, giải đấu Esport dành cho sinh viên của Đoàn - Hội Khoa Công nghệ Thông tin, Đại học Quốc tế - Đại học Quốc gia Thành phố Hồ Chí Minh hứa hẹn sẽ tiếp tục tổ chức những mùa giải hấp dẫn và mang lại nhiều trải nghiệm thú vị cho các sinh viên yêu thích eSports trong tương lai.</p>
                     <a href="https://bit.ly/ITGT_Register_Form" target="_blank" class="button">Đăng ký</a>
                     <a href="https://youtu.be/QSujU0AvjJc" target="_blank" class="button"><ion-icon name="play"></ion-icon>Watch Gameplay</a>
+                
                 </div>       
 
                 <div class="social">
@@ -87,8 +104,21 @@
             <h1>THỂ LỆ</h1>
         </div>
   
-        <div class="slider-content">
+        <div class="slider-content" id="swiper-container">
+
+            <div class="cards">
+                <div class="swiper-button">
+                    <div class="prev-button">
+                        <ion-icon name="chevron-back-outline" id ="swiper"></ion-icon>
+                    </div>
+
+                    <div class="next-button">
+                        <ion-icon name="chevron-forward-outline" id ="swiper"></ion-icon>
+                    </div>
+                </div>
+
             <div class="slider-overlay">
+
                 <div class="swiper-slide">
                 
                     <div class="title">
@@ -163,7 +193,7 @@
                     <div class="title">
                         <ion-icon name="planet-outline" class="icon"></ion-icon>
                         <h5>Đối với</h5>
-                        <h2>TÀI KHOẢN<br>THI ĐẤU</h2>
+                        <h2>TÀI KHOẢN THI ĐẤU</h2>
                     </div>
 
                     <div class="rule">
@@ -188,7 +218,60 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide">
+                
+                    <div class="title">
+                        <ion-icon name="planet-outline" class="icon"></ion-icon>
+                        <h5>Đối với</h5>
+                        <h2>VẬN ĐỘNG VIÊN</h2>
+                    </div>
+
+                    <div class="rule">
+                        <div class="no">
+                            <h4 class="number">1</h4>
+                            <h6 class="desc"> Mỗi đội phải có ít nhất 5 và tối đa 7 thành viên.</h6>
+                        </div>
+
+                        <div class="no">
+                            <h4 class="number">2</h4>
+                            <h6 class="desc"> Các VĐV phải là sinh viên và có thẻ sinh viên còn hiệu lực.</h6>
+                        </div>
+
+                        <div class="no">
+                            <h4 class="number">3</h4>
+                            <h6 class="desc"> Mỗi VĐV chỉ được tham gia một đội tuyển duy nhất.</h6>
+                        </div>
+
+                        <div class="no">
+                        <h4 class="number">4</h4>
+                        <h6 class="desc"> Các tuyển thủ không được sử dụng lời lẽ công kích hoặc xúc phạm đối thủ.</h6>
+                        </div>
+
+                        <div class="no">
+                            <h4 class="number">5</h4>
+                            <h6 class="desc"> Cấm mọi hành vi phi thể thao trong giải đấu.</h6>
+                        </div>
+                        
+                        <div class="no">
+                            <h4 class="number">6</h4>
+                            <h6 class="desc"> Nếu phát hiện có hành vi gian lận hoặc vi phạm quy định, đội tuyển sẽ bị loại ngay lập tức.</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="current-swiper">
+
+                <div class="part1">
+                    <ion-icon name="ellipse" id = "current-part"></ion-icon>
+                </div>
+
+                <div class="part2">
+                    <ion-icon name="ellipse" id = "current-part"></ion-icon>
+                </div>
+            </div>
+
         </div>
     </div>
     </section>
@@ -258,9 +341,9 @@
                         Địa điểm: Phòng A1.109 -  trường Đại học Quốc Tế - ĐHQG TPHCM.<br>
                         Đối tượng tham gia: Toàn bộ sinh viên các trường Đại học, Cao đẳng trên địa bàn TPHCM.
                     </p>
-                    <small>Lưu ý: 
+                    <h5>Lưu ý: 
                         Các bạn sinh viên tham gia Lễ khai mạc vui lòng mang theo THẺ SINH VIÊN nhằm xác minh danh tính.
-                    </small>
+                    </h5>
 
                     <span class = "right-container-arrow"></span>
                 </div>
@@ -292,9 +375,9 @@
                         Địa điểm: Phòng A1.109 -  trường Đại học Quốc Tế - ĐHQG TPHCM.<br>
                         Đối tượng tham gia: Toàn bộ sinh viên các trường Đại học, Cao đẳng trên địa bàn TPHCM.
                     </p>
-                    <small>Lưu ý: 
+                    <h5>Lưu ý: 
                         Các bạn sinh viên tham gia Lễ khai mạc vui lòng mang theo THẺ SINH VIÊN nhằm xác minh danh tính.
-                    </small>
+                    </h5>
 
                     <span class = "right-container-arrow"></span>
                 </div>

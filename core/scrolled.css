@@ -1,0 +1,20 @@
+.scrolled {
+    background-color: rgba(101, 0, 0, 0.932); /* New background color when scrolled */
+}
+
+/* scrolling effect */
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b84f4f; /* Set the color of the scrollbar thumb on hover */
+}

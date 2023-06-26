@@ -1,0 +1,166 @@
+.navigation {
+    margin-right: -280px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: .98em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.navigation #close-outl{
+    color: rgb(107, 38, 38);
+    cursor: pointer;
+    display: none;
+    margin-top: -10px;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.navigation a:hover {
+    transform: scale(1.05);
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0 ;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .35s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnRegister-popup{
+    width: 130px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 65px;
+    cursor: pointer;
+    font-size: .95em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .5s;
+    border-width: 2%;
+}
+
+.navigation .btnRegister-popup:hover{
+    transform: scale(1.1);
+    background: white;
+    color: rgb(153, 41, 41);
+    font-weight: 600;
+}
+
+.navigation .btnRegister-popup:active{
+    opacity: 0.7 ;
+}
+
+#menu-open {
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+} 
+
+#menu-open:hover {
+    transform: scale(1.1);
+    color: white;
+} 
+
+#menu-open:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 1180px){
+    .navigation {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: auto;
+        font-size: 1em;
+        background: rgb(243, 239, 239);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px;
+        transition: 0.5s;
+    }
+
+    #menu-open {
+        display: block;
+    }
+
+    .navigation.open{
+        right: 0;
+        transition:  0.4s;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .navigation #close-outl{
+        display: flex;
+    }
+
+    #menu-open.active {
+        display: none;
+    }
+
+    .navigation {
+        margin-right: 0;
+    }
+
+    .navigation a{
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 0;
+        font-weight: 700;
+        padding: 5px 30px 12px 25px;
+        text-align: center;
+        letter-spacing: 1px;
+        border-bottom: rgba(255, 255, 255, 0.479) ;
+        transform: none;
+        transition: all 0.4s;
+        color: rgb(131, 3, 3);
+    }
+
+    .navigation a::after {
+        background: rgb(131, 3, 3);
+    }
+
+    .navigation .btnRegister-popup{
+        margin: 0 auto;
+        margin-top: -10px;
+        font-size: 1.1em;
+        font-weight: 700;
+        width: 155px;
+        height: 55px;
+        color: rgb(131, 3, 3);
+        border-color: rgb(131, 3, 3);
+    }
+
+    .navigation .btnRegister-popup:hover{
+        background: rgb(131, 3, 3);
+        color: white;
+        font-weight: 600;
+    }
+
+}

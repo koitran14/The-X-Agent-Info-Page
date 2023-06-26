@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('res/font/ValorantFont.ttf') format('truetype'),
+         url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border-bottom: 1px solid rgb(117, 109, 109);
+    transition: background-color 0.3s ease;
+}
+
+.logo img {
+    width: 280px;
+    float: left;
+}
+
+@media (max-width: 1180px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+
+    .logo img{
+        width: 50%;
+        align-items: space-between;
+    }
+}
