@@ -11,9 +11,3 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-@media (max-width: 1180px){
-    body{
-        z-index: 10000;
-    }
-}

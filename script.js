@@ -1,5 +1,5 @@
-import './section2/slider-effect.js';
-import './header/header.js';
+import './components/section2/slider-effect.js';
+import './components/header/header.js';
 
 // Select the scroll-up icon link
 const scrollUpLink = document.querySelector('.scroll-up');

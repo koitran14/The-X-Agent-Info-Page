@@ -1,10 +1,6 @@
 @import './slider-effect.css';
 @import './current-effect.css';
 
-
-*{
-    font-family: 'Poppins', sans-serif;
-}
 #section2 {
     min-height: 100vh;
     padding: 40px 0;
@@ -140,9 +136,9 @@
     justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
-  }
+}
 
-  .autoplay-progress svg {
+.autoplay-progress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -156,6 +152,6 @@
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
-  }
+}
 
   
