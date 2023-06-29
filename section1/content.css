@@ -1,14 +1,13 @@
 .content {
-    padding: 180px 100px 100px 100px;
-    padding-left: 3%;
+    position: relative;
+    padding: 180px 100px 10px 100px;
+
 }
 
 .content .intro-text {
     position: relative;
-    z-index: 2;
     margin-bottom: 50px;
     padding-right: 50%;
-    padding-left: 50px;
 }
 
 .content .intro-text h6 {
@@ -91,9 +90,8 @@
 }
 
 .content .social {
-    position: absolute;
-    margin-top: 20px;
-    padding-left: 50px;
+    position: relative;
+    padding-top: 50px;
     transform: translateY(-50%);
     z-index: 20;
 }
@@ -103,7 +101,7 @@
     color: white;
     font-size: 20px;
     margin-right: 10px;
-    transition: .3s;
+    transition: .5s ease all;
 }
 
 .content .social a:hover{
@@ -131,7 +129,6 @@
 .content .social a:active{
     opacity: 0.7;
 }
-
 
 .intro-img {
     position: absolute;
@@ -188,11 +185,17 @@
 }
 
 @media (max-width: 1180px){
+
+    .content {
+        padding: 0 10%;
+        margin-top: 30%;
+    }
+
     .intro-img img{
         width: 100%;
         height: auto;
-        padding-top: 18%;
-        filter: brightness(55%) blur(.5px);
+        padding-top: 5%;
+        filter: brightness(50%) blur(.5px);
     }
 
     .content .intro-text{
@@ -202,14 +205,11 @@
         align-items: center;
     }
 
-    #name{
-        font-size: 420%;
-    }
-
-    .content{
-        padding: 24% 8% 15% 8%;
+    #name {
+        font-size: 400%;
     }
 }
+
 
 html {
     scroll-behavior: smooth;

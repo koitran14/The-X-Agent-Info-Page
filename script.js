@@ -1,32 +1,6 @@
-window.addEventListener('scroll', function() {
-    var header = document.getElementById('main-header');
-    var distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-    if (distanceFromTop > 0) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+import './section2/slider-effect.js';
+import './header/header.js';
 
-  
-  var menuToggle = document.getElementById('menu-open');
-  let navlist = document.querySelector('.navigation');
-  var closeToggle = document.getElementById('close-outl');
-
-  menuToggle.addEventListener('click', () => {
-    if (!navlist.classList.contains('open')) {
-      menuToggle.classList.add('active');
-      navlist.classList.add('open');
-    } 
-  });
-
-  closeToggle.addEventListener('click', () => {
-      menuToggle.classList.remove('active');
-      navlist.classList.remove('open');
-
-  });
-  
 // Select the scroll-up icon link
 const scrollUpLink = document.querySelector('.scroll-up');
 

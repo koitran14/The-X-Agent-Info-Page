@@ -24,13 +24,14 @@
 }
 
 @media (max-width: 1180px){
-    header{
-        padding: 15px 3%;
+    #main-header{
+        padding: 10%;
         transition: .2s;
+        height: 15%;
     }
 
     .logo img{
-        width: 50%;
+        width: 65%;
         align-items: space-between;
     }
 }

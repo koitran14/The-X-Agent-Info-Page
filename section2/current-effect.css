@@ -1,0 +1,34 @@
+.current-swiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.current-swiper label{
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 0 3px;
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+.current-swiper label:hover{
+    background: rgb(191, 3, 3);
+    transform: scale(1.1);
+    width: 30px;
+}
+
+.current-swiper label.one.active {
+    background: rgb(191, 3, 3);
+    width: 30px;
+}
+
+.current-swiper label.two.active {
+    background: rgb(191, 3, 3);
+    width: 30px;
+}
+
+

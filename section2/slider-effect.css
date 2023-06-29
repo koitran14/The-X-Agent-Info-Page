@@ -1,0 +1,30 @@
+
+.swiper-button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98.5%;
+    display: flex;
+    z-index: 9999;
+    bottom: 440px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+#swiper {
+    color: rgba(101, 0, 0, 0.932);
+    font-size: 30px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: white;
+    z-index: 9999;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+#swiper:hover{
+    transform: scale(1.2);
+    background: rgb(133, 14, 14);
+    color: white;
+}
