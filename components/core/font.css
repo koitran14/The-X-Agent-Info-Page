@@ -3,3 +3,10 @@
     src: url('/res/font/ValorantFont.ttf') format('truetype'),
          url('https://fonts.googleapis.com/css?family=Poppins');
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
