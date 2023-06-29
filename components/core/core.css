@@ -1,3 +1,2 @@
-/* @import './body.css'; */
-@import './font.css';
-@import './scrolled.css';
+@import '/components/core/font.css';
+@import '/components/core/scrolled.css';
