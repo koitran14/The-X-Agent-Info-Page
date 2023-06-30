@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .current-swiper label{
@@ -30,5 +30,6 @@
     background: rgb(191, 3, 3);
     width: 30px;
 }
+
 
 

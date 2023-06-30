@@ -49,3 +49,7 @@ function scrollToRight() {
     behavior: 'smooth',
   });
 }
+
+
+
+

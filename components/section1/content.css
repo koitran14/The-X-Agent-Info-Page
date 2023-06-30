@@ -75,8 +75,7 @@
     color: white;
     padding: 9px 24px;
     border-radius: 12px;
-    margin-right: 12px;
-    margin-top: 10px;
+    margin: 10px 12px 0 0;
     font-size: 15px;
     transition: 0.35s;
     font-weight: 600;
@@ -95,7 +94,7 @@
 
 .content .social {
     position: relative;
-    padding-top: 20px;
+    padding: 20px 0 30px 0;
     z-index: 20;
 }
 
@@ -163,7 +162,7 @@
     position: fixed;
     bottom: 6%;
     right: 5%;
-    z-index: 30;
+    z-index: 99999999;
 }
 
 .scroll-up ion-icon {

@@ -2,10 +2,9 @@
 @import './current-effect.css';
 
 #section2 {
-    min-height: 100vh;
+    height: 100%;
     padding: 40px 0;
     background-color: rgba(153, 149, 149, 0.308);
-    text-align: justify;
     backdrop-filter: brightness(60%);
 }
 
@@ -22,27 +21,43 @@
     transition: .3s;
 }
 
+.title h1 span{
+    color:rgb(197, 42, 42);
+    font-family: 'ValorantFont', sans-serif;
+}
+
 
 #section2 h1:hover{
-    color: rgb(197, 42, 42);
     transform: scale(1.2);
     margin: 0;
     padding: 0;
 }
 
 .slider-content {
-    padding: 40px 10px 0 10px;
+    padding: 0 10px;
 }
 
 .slider-content .slider-overlay{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/3) - 12px);
-    gap: 16px;
+    gap: 18px;
     overflow: hidden;
-    padding: 0 32px;
+    padding: 0 35px;
     max-width: 200%;
     width: 100%;
+    z-index: 50;
+}
+
+.sliders{
+    display: flex;
+    height: 101%;
+    width: fit-content;
+    transition: all 0.4s ease;
+}
+
+.sliders:hover{
+    transform: translateY(-5px);
 }
 
 .swiper-slide {
@@ -51,17 +66,18 @@
     background-color: whitesmoke;
     border: 2.5px dashed rgb(97, 10, 10);
     border-radius: 15px;
-    padding: 25px;
+    padding: 15px 25px;
     display: flexbox;
     align-items: center;
     justify-content: center;
     transition: 0.6s all ease;
-    margin: 0 30px;
+    text-align: justify;
+    margin: auto;
 }
 
 
 .slider-content .swiper-slide .title{
-    margin-bottom: 8%;
+    margin-bottom: 12px;
     /* background-color: #888; */
     width: fit-content;
 }
@@ -106,8 +122,6 @@
     font-size: 48px;
     display: inline-block;
     font-weight: 700;
-    /* width: 10%; */
-    
 }
 
 .swiper-slide .desc{
@@ -154,4 +168,37 @@
     transform: rotate(-90deg);
 }
 
-  
+@media (max-width: 1180px){
+    .sliders{
+        display: flex;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slider-content .slider-overlay{
+       display: block;
+       justify-content: space-between;
+       max-width: 100%;
+       padding: 0;
+    }
+
+    .swiper-slide{
+        width: 100%;
+        padding: 15px 20px;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    .current-swiper{
+        display: none;
+    }
+
+    .swiper-button{
+        display: none;
+    }
+
+    .swiper-slide .title h2{
+        font-size: 30px;
+    }
+}
+

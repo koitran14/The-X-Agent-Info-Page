@@ -7,9 +7,10 @@
     width: 98.5%;
     display: flex;
     z-index: 9999;
-    bottom: 440px;
+    bottom: 50%;
     box-sizing: border-box;
     transition: .5s;
+    margin: auto;
 }
 
 #swiper {
