@@ -1,0 +1,38 @@
+
+#section4 {
+    height: 100%;
+    padding: 70px 0;
+    background-color: rgba(240, 234, 234, 0.496);
+    backdrop-filter: brightness(60%); 
+
+}
+
+#section4 .info {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#section4 p {
+    text-align: center;
+    width: 60%;
+    margin: 5px 0;
+}
+
+#section4 .fanpage{
+    color: rgb(183, 5, 5);
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+@media (max-width: 1140px) {
+    #section4 p {
+        width: 85%;
+    }
+}
