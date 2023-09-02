@@ -20,7 +20,7 @@
 #section4 p {
     text-align: center;
     width: 60%;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #section4 .fanpage{
@@ -28,11 +28,21 @@
     font-size: large;
     font-weight: 600;
     text-decoration: none;
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+}
 
+#section4 .fanpage:hover{
+    color: white;
 }
 
 @media (max-width: 1140px) {
     #section4 p {
         width: 85%;
     }
+}
+
+#section4 .btnRegister-popup {
+    margin: 20px 0;
+    font-weight: 600;
 }
