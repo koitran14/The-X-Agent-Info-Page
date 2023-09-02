@@ -3,3 +3,13 @@
 ![](res/img/web-ui.png)
 #
 
+This is a web/app that supports for admin in business management. It is also a creation of my practice in learning of NextJS, TailwindCSS worked with Database MySQL, Prisma and PlanetScale.
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/koitran14/The-X-Agent-Info-Page.git
+```
+
+
+
