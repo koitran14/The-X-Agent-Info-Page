@@ -1,5 +1,5 @@
-# IT GAMING TOUR 2023: THE X AGENT(updating...)
+# IT GAMING TOUR 2023: THE X AGENT
 #### _Tran Ngoc Dang Khoi_
-![](res/img/web-ui.jpeg)
+![](res/img/web-ui.png)
 #
 
