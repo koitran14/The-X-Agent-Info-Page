@@ -3,7 +3,7 @@
 ![](res/img/web-ui.png)
 #
 
-This is a web/app that supports for admin in business management. It is also a creation of my practice in learning of NextJS, TailwindCSS worked with Database MySQL, Prisma and PlanetScale.
+This is the main infopage for The X Agent - the new e-Sport competition of ITYU.
 
 ### Cloning the repository
 
